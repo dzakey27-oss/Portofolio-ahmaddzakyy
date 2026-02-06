@@ -1,179 +1,133 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Ahmad Dzaky Fadhilah</title>
 
-body {
-  background-color: #0f0f0f;
-  color: #f5f5f5;
-  line-height: 1.6;
-}
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-/* Navbar */
-header {
-  background-color: #000000;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.navbar {
-  max-width: 1100px;
-  margin: auto;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Ahmad Dzaky</h1>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#profile">Profil</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Pengalaman</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
-.logo {
-  color: #facc15; /* kuning */
-  font-size: 24px;
-  font-weight: 600;
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Halo, Saya <span>Ahmad Dzaky Fadhilah</span></h2>
+    <p>Siswa SMA | Programmer Pemula</p>
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+    <!-- Gambar Kucing Lingkaran dengan Bingkai -->
+    <div class="hero-image">
+      <img src="kucing.jpg" alt="Kucing" class="circle-image">
+    </div>
 
-.nav-links a {
-  color: #f5f5f5;
-  text-decoration: none;
-  transition: 0.3s;
-}
+    <a href="#about" class="btn">Lihat Profil</a>
+  </section>
 
-.nav-links a:hover {
-  color: #facc15;
-}
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah pelajar <b>SMA kelas 1</b> di <b>Sekolah Prestasi Prima</b>.  
+      Saya tertarik dengan dunia teknologi dan pemrograman, serta terus belajar hal baru.
+    </p>
+    <p>
+      Hobi saya adalah <b>main bola</b> ⚽ dan <b>koding</b> 💻.
+    </p>
+  </section>
 
-/* Hero */
-.hero {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
+  <!-- Profile Section -->
+  <section id="profile" class="section">
+    <h2>Profil Singkat</h2>
+    <ul>
+      <li>📌 Nama: Ahmad Dzaky Fadhilah</li>
+      <li>🎂 Umur: 16 Tahun</li>
+      <li>📏 Tinggi Badan: 176 cm</li>
+      <li>🏫 Pendidikan: SMA Kelas 1</li>
+      <li>🍗 Makanan Favorit: Chicken</li>
+      <li>🌟 Cita-cita: Jadi Pengusaha</li>
+    </ul>
+  </section>
 
-.hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Keahlian</h2>
+    <ul>
+      <li>⚡ Cepat berpikir</li>
+      <li>🤝 Bertanggung jawab</li>
+      <li>💻 Dasar HTML & CSS</li>
+      <li>🐍 Dasar Python</li>
+    </ul>
+  </section>
 
-.hero span {
-  color: #facc15;
-}
+  <!-- Experience Section -->
+  <section id="projects" class="section">
+    <h2>Pengalaman</h2>
+    <div class="project-container">
 
-.hero p {
-  font-size: 18px;
-  opacity: 0.9;
-}
+      <div class="project-card">
+        <h3>Membuat Program Python</h3>
+        <p>
+          Membuat program Python sederhana seperti perhitungan,
+          logika percabangan, dan input-output.
+        </p>
+      </div>
 
-.btn {
-  margin-top: 25px;
-  padding: 12px 28px;
-  background-color: #facc15;
-  color: #000000;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: 0.3s;
-}
+      <div class="project-card">
+        <h3>Membuat CV Digital</h3>
+        <p>
+          Membuat CV digital sederhana sebagai latihan desain
+          dan pengenalan dunia profesional.
+        </p>
+      </div>
 
-.btn:hover {
-  background-color: #eab308;
-}
+      <div class="project-card">
+        <h3>Membuat Website Portfolio</h3>
+        <p>
+          Membuat website portfolio menggunakan HTML dan CSS
+          untuk menampilkan profil dan pengalaman.
+        </p>
+      </div>
 
-/* Hero Image Circle (Gambar Kucing) */
-.hero-image {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-}
+      <div class="project-card">
+        <h3>Kerja Tim & Tanggung Jawab</h3>
+        <p>
+          Terbiasa bekerja dalam tim di sekolah dan bertanggung jawab
+          menyelesaikan tugas tepat waktu.
+        </p>
+      </div>
 
-.circle-image {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;          /* lingkaran */
-  border: 5px solid #facc15;   /* bingkai kuning */
-  box-shadow: 0 5px 15px rgba(250, 204, 21, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+    </div>
+  </section>
 
-.circle-image:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 25px rgba(250, 204, 21, 0.6);
-}
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Kontak</h2>
+    <p>Email: ahmaddzaky@email.com</p>
+    <p>GitHub: <a href="https://github.com/dzakey27-oss" target="_blank">github.com/dzakey27-oss</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/evdzakyff" target="_blank">@evdzakyff</a></p>
+  </section>
 
-/* Section */
-.section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 80px 20px;
-}
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Ahmad Dzaky Fadhilah</p>
+  </footer>
 
-.section h2 {
-  color: #facc15;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-/* Skills */
-.section ul {
-  list-style: none;
-}
-
-.section ul li {
-  background-color: #1a1a1a;
-  padding: 12px 16px;
-  margin-bottom: 10px;
-  border-left: 4px solid #facc15;
-  border-radius: 6px;
-}
-
-/* Projects */
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background-color: #000000;
-  padding: 25px;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(250,204,21,0.3);
-}
-
-.project-card h3 {
-  margin-bottom: 10px;
-  color: #facc15;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 12px;
-  color: #facc15;
-  text-decoration: none;
-}
-
-/* Footer */
-footer {
-  background-color: #000000;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  opacity: 0.85;
-}
+</body>
+</html>
